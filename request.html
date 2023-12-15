@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-------- title ----------->
+    <title>Online Book Shop</title>
+
+    <!-------- customer style link ----------->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-------- font awesome cdn link --------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+   
+
+</head>
+<body>
+
+    <!--------- header section start ------------>
+    <header class="header">
+        <div class="header_one">
+            <a href="" class="logo"><i class="fas fa-book"> apani library</i></a>
+
+            <form action="" class="search-form">
+                <input id="search-box" type="search" placeholder="search here...">
+                <label for="" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn"></div>
+                <div id="login-btn" style="border:solid #477eff; padding: 1rem 1rem; font-size: 2rem;">Book request</div>
+            </div>
+        </div>
+
+        <!----- navigation bar -------->
+        <div class="header_two">
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="index.html#featured">Featured</a>
+                <a href="index.html#arrivals">Arrivals</a>
+                <a href="index.html#reviews">Reviews</a> 
+                <a href="about.html">about</a>    
+                <a href="request.html">request</a>          
+            </div>
+        </div>
+    
+    </header>
+
+    <!-------- bottom navbar start ----------->
+    <div class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+     
+    </div>
+
+     <!-------- login form start ----------->
+    <div class="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form id="myForm" onsubmit="return validateForm()">
+
+            <h3>book request form</h3>
+
+            <span>name</span>
+            <input type="text" id="name" name="name" class="box" placeholder="enter your your name">
+
+           
+
+
+            <span>book name</span>
+            <input type="text" id="book" name="book" class="box" placeholder="enter book name">
+
+            <span>Additional note</span>
+            <input type="text" id="note" name="note" class="box" placeholder="enter Additional note">
+
+            <span>email</span>
+            <input type="email"  id="email" name="email" class="box" placeholder="enter your email">
+           
+
+            <div class="check-box">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+
+            <input type="submit" value="Submit" class="btn">
+           
+            
+        </form>
+
+
+        
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var book = document.getElementById("book").value;
+            var note = document.getElementById("note").value;
+           
+
+           
+
+            if (name.trim() === "" ||
+            book.trim() === "" ||
+            note.trim() === "" ||
+
+            
+            email.trim() === "") {
+                prompt("Name and email are required fields.");
+                return false;
+            }
+
+            if (!isValidEmail(email)) {
+                prompt( "Please enter a valid email address.");
+                return false;
+            }
+
+            return true;
+        }
+
+        function isValidEmail(email) {
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(email);
+        }
+    </script>
+
+    </div>
+
+    <style>
+      
+        /* Style for the scrolling message */
+        .scrolling-message {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            white-space: nowrap;
+            font-size: 15px;
+            border: 2px solid whitesmoke;
+            /* Prevent text from wrapping */
+        }
+
+        /* Customize the marquee speed and direction */
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: linear infinite;
+        }
+
+    </style>
+
+
+
+<div class="scrolling-message">
+    <!-- The marquee tag for scrolling message -->
+    <marquee behavior="scroll" direction="left" class="marquee" scrollamount="5" scrolldelay="100">
+        New book Arrivals  * book of dare    * brief history of time * masterstoke * wings of fire *     </marquee>
+</div>
+
+
+<style>
+    table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 90%;
+        margin: 20px 50px;
+        font-size: 20px;
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+        
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        font-style: italic;
+        background-image: url('background-image.jpg');
+        background-size: cover;
+        color: black;
+    }
+
+    h1{
+        text-align: center;
+        text-decoration: underline;
+        
+    }
+</style>
+<h1>
+    Request book 
+</h1>
+<table>
+   
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Email</th>
+            <th>Book Name</th>
+            <th>Additional Note</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Jay Shah</td>
+            <td>2023-10-12</td>
+            <td>jayshah@gmail.com</td>
+            <td>The Great Novel</td>
+            <td>This is a <i>fantastic</i> book!</td>
+        </tr>
+
+        <tr>
+            <td>Ramakrishnan</td>
+            <td>2023-1-05</td>
+            <td>ramak@gmail.com</td>
+            <td>The Great Novel</td>
+            <td>This is a <i>fantastic</i> book!</td>
+        </tr>
+
+
+        <tr>
+            <td>vasant gawde</td>
+            <td>2023-10-12</td>
+            <td>vasant@gmail.com</td>
+            <td>wings o</td>
+            <td>This is a <i>motivational</i> book!</td>
+        </tr>
+
+
+        <tr>
+            <td>rajveer singh</td>
+            <td>2023-10-12</td>
+            <td>rajveer@gmail.com</td>
+            <td>The Great Novel</td>
+            <td>This is a <i>fantastic</i> book!</td>
+        </tr>
+        <!-- Add more rows for additional users -->
+    </tbody>
+</table>
+
+
+    <!-------- footer section start  ----------->
+    
+    <section class="footer">
+        <div class="box-container">
+          
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href=""><i class="fas fa-arrow-right"></i>home</a>
+                <a href=""><i class="fas fa-arrow-right"></i>featured</a>
+                <a href=""><i class="fas fa-arrow-right"></i>arrivals</a>
+                <a href=""><i class="fas fa-arrow-right"></i>blogs</a>    
+            </div>
+
+          
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href=""><i class="fas fa-phone"></i>+123-356-546</a>
+                <a href=""><i class="fas fa-phone"></i>+123-356-546</a>
+                <a href=""><i class="fas fa-envelope"></i>abc@gmail.com</a>
+               
+            </div>
+        </div>
+
+        <div class="share">
+            <a href=""><i class="fa fa-facebook"></i></a> 
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-square-pinterest"></i></a>
+        </div>
+
+        <div class="credit">created by <span>Rohit</span> | all rights reserved</div>
+    </section>
+          
+
+     <!------- customer script link --------->
+     <script src="script.js"></script>
+    
+</body>
+</html>

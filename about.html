@@ -1,0 +1,243 @@
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Online Book About</title>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Swiper CDN Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Custom Styles for Highlighting and Text Formatting -->
+    <style>
+        .container {
+            margin: 20px;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        em {
+            font-style: italic;
+            color: #ff6600; /* Orange */
+        }
+
+        u {
+            text-decoration: underline;
+            color: #0066cc; /* Blue */
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        li {
+            font-size: 2rem;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        sub {
+            vertical-align: sub;
+            font-size: 0.8em;
+        }
+
+        sup {
+            vertical-align: super;
+            font-size: 0.8em;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #333;
+        }
+    </style>
+
+</head>
+
+<body>
+
+       <!--------- header section start ------------>
+   <header class="header">
+    <div class="header_one">
+        <a href="" class="logo"><i class="fas fa-book"> apani library</i></a>
+
+        <form action="" class="search-form">
+            <input id="search-box" type="search" placeholder="search here...">
+            <label for="" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn"></div>
+            <div id="login-btn" style="border:solid #477eff; padding: 1rem 1rem; font-size: 2rem;">Book request</div>
+        </div>
+    </div>
+
+    <!----- navigation bar -------->
+    <div class="header_two">
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html#featured">Featured</a>
+            <a href="index.html#arrivals">Arrivals</a>
+            <a href="index.html#reviews">Reviews</a> 
+            <a href="about.html">about</a>    
+            <a href="request.html">request</a>          
+        </div>
+    </div>
+
+</header>
+
+<!-------- bottom navbar start ----------->
+<div class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+ 
+</div>
+
+ <!-------- login form start ----------->
+<div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>book request form</h3>
+        <span>name</span>
+        <input type="text" class="box" placeholder="enter your your">
+        <span>email</span>
+        <input type="email" class="box" placeholder="enter your email">
+        <span>book name</span>
+        <input type="text" class="box" placeholder="enter book name">
+        <span>Additional note</span>
+        <input type="text" class="box" placeholder="enter Additional note">
+       
+
+        <div class="check-box">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+
+        <input type="submit" value="Submit" class="btn">
+       
+        
+    </form>
+</div>
+
+<section>
+  
+
+        <div class="container">
+            <h2>Welcome to Our Free E-Book Library</h2>
+            <p>At our e-book library, we are passionate about <em>promoting the joy of reading</em>. Our mission is to
+                provide a vast collection of e-books, available for <u>free in PDF format</u>, for readers of all ages
+                and interests. Whether you're a student, a literature enthusiast, or just someone who <em>loves to
+                    read</em>, you'll find a wide range of titles to explore.</p>
+
+            <h2>What We Offer:</h2>
+            <p><u>Our e-book library offers the following:</u></p>
+            <ul>
+                <li>A diverse collection of e-books in various genres</li>
+                <li>Easy-to-navigate categories for quick access to your favorite topics</li>
+                <li>High-quality PDF downloads for offline reading</li>
+                <li>Regular updates to keep our library fresh and exciting</li>
+            </ul>
+
+            <h2>Why Choose Our E-Book Library:</h2>
+            <p>There are several reasons to choose our e-book library:</p>
+            <ul>
+                <li><strong>Free Access:</strong> We believe in the power of knowledge and accessibility. All our
+                    e-books are available for free.</li>
+                <li><strong>No Registration Required:</strong> You don't need to register or provide personal
+                    information to access our library.</li>
+                <li><strong>Cross-Platform Compatibility:</strong> Our e-books can be read on a wide range of devices,
+                    including e-readers, tablets, and smartphones.</li>
+                <li><sub>Educational Resources:</sub> We have a dedicated section for educational materials, making it a
+                    valuable resource for students.</li>
+                <li><sup>Community and Discussion:</sup> Join our forums to discuss books, reading recommendations, and
+                    connect with fellow readers.</li>
+            </ul>
+
+            <h2>Join Us Today</h2>
+            <p>Join our community of book enthusiasts and start your reading journey with us. Explore our e-book
+                library, discover new titles, and download PDFs for free. Reading has never been this <code>accessible
+                    and enjoyable</code>.</p>
+        </div>
+    </section>
+
+   
+    <!-------- footer section start  ----------->
+    
+    <section class="footer">
+        <div class="box-container">
+          
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href=""><i class="fas fa-arrow-right"></i>home</a>
+                <a href=""><i class="fas fa-arrow-right"></i>featured</a>
+                <a href=""><i class="fas fa-arrow-right"></i>arrivals</a>
+                <a href=""><i class="fas fa-arrow-right"></i>blogs</a>    
+            </div>
+
+          
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href=""><i class="fas fa-phone"></i>+123-356-546</a>
+                <a href=""><i class="fas fa-phone"></i>+123-356-546</a>
+                <a href=""><i class="fas fa-envelope"></i>abc@gmail.com</a>
+               
+            </div>
+        </div>
+
+        <div class="share">
+            <a href=""><i class="fa fa-facebook"></i></a> 
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            <a href=""><i class="fa fa-square-pinterest"></i></a>
+        </div>
+
+        <div class="credit">created by <span>Rohit</span> | all rights reserved</div>
+    </section>
+          
+  
+    <!-- Custom Script Link -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
